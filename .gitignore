@@ -5,7 +5,6 @@ __pycache__/
 .venv-gpu/
 
 # Runtime-only outputs
-experiments/**/checkpoints/
 experiments/**/state/
 experiments/**/temp/
 experiments/_fast_parallel_launcher/
@@ -18,4 +17,3 @@ experiments/*preoptimization_incomplete/
 .idea/
 .DS_Store
 Thumbs.db
-

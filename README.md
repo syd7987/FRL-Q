@@ -16,6 +16,8 @@ For the 8-client comparison, random selection produced a lower final and late-tr
 
 The reported values are training metrics from one seed, not held-out evaluation results.
 
+See [EXPERIMENT_RESULTS.md](EXPERIMENT_RESULTS.md) for the training-time analysis and raw learning curve.
+
 ## Run
 
 Create a Python environment with the required TensorFlow stack, then run all three experiments in parallel:
@@ -33,7 +35,8 @@ Each completed experiment directory contains:
 - `metrics/`: per-episode training metrics and client-selection records
 - `logs/`: captured standard output and error logs
 - `models/`: final trained model
+- `checkpoints/`: global model weights saved during training
 - `source_snapshot/`: exact source used for the run
 
-Intermediate checkpoints, temporary worker files, runtime state, virtual environments, and interrupted pre-optimization runs are intentionally excluded from Git.
+Temporary worker files, runtime state, virtual environments, and interrupted pre-optimization runs are intentionally excluded from Git.
 
