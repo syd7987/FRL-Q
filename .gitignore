@@ -1,0 +1,21 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+.venv-gpu/
+
+# Runtime-only outputs
+experiments/**/checkpoints/
+experiments/**/state/
+experiments/**/temp/
+experiments/_fast_parallel_launcher/
+
+# Interrupted pre-optimization runs
+experiments/*preoptimization_incomplete/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
